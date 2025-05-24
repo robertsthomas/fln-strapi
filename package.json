@@ -35,11 +35,10 @@
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
-    "pnpm": ">=9.0.0"
+    "npm": ">=6.0.0"
   },
   "strapi": {
     "uuid": "d500206e-4205-4d81-8bc6-158860250beb",
     "installId": "255ddb0bbd8b1c8950be5e8dea9adcf661c55595c08cd0e4b206d9567b5f6a12"
-  },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+  }
 }
