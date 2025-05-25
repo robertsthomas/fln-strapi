@@ -385,41 +385,20 @@ export interface ApiProviderProvider extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    address: Schema.Attribute.JSON;
-    categories: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    email: Schema.Attribute.String;
-    featured: Schema.Attribute.Boolean;
-    featuredImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    featuredImageUrl: Schema.Attribute.Text;
-    images: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    imageUrls: Schema.Attribute.JSON;
+    data: Schema.Attribute.JSON & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::provider.provider'
     > &
       Schema.Attribute.Private;
-    openingHours: Schema.Attribute.JSON;
-    phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    reviews: Schema.Attribute.JSON;
-    reviewsLink: Schema.Attribute.String;
-    title: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.Unique;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    website: Schema.Attribute.String;
-    zipcodes: Schema.Attribute.JSON;
   };
 }
 

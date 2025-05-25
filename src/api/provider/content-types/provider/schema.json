@@ -11,68 +11,9 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "address": {
-      "type": "json"
-    },
-    "website": {
-      "type": "string"
-    },
-    "featured": {
-      "type": "boolean"
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "imageUrls": {
-      "type": "json"
-    },
-    "featuredImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "featuredImageUrl": {
-      "type": "text"
-    },
-    "reviewsLink": {
-      "type": "string"
-    },
-    "categories": {
-      "type": "json"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "reviews": {
-      "type": "json"
-    },
-    "email": {
-      "type": "string"
-    },
-    "openingHours": {
-      "type": "json"
-    },
-    "zipcodes": {
-      "type": "json"
+    "data": {
+      "type": "json",
+      "required": true
     }
   }
 }
